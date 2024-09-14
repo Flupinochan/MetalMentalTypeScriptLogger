@@ -1,0 +1,38 @@
+{
+  "name": "metalmental-logger",
+  "version": "0.1.5",
+  "description": "A simple logger library that outputs the file names and line numbers of TypeScript code before it is compiled to JavaScript",
+  "main": "dist/cjs/logger.js",
+  "module": "dist/esm/logger.js",
+  "types": "dist/esm/logger.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flupinochan/MetalMentalPythonLogger"
+  },
+  "keywords": [
+    "typescript",
+    "logger",
+    "logging",
+    "typescript-logger"
+  ],
+  "author": "MetalMental",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "date-fns": "^4.0.0-beta.1"
+  }
+}

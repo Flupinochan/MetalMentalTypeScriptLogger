@@ -1,6 +1,6 @@
 {
   "name": "metalmental-logger",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A simple logger library that outputs the file names and line numbers of TypeScript code before it is compiled to JavaScript",
   "main": "dist/cjs/logger.js",
   "module": "dist/esm/logger.js",
@@ -17,8 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Flupinochan/MetalMentalPythonLogger"
+    "url": "https://github.com/Flupinochan/MetalMentalTypeScriptLogger"
   },
+  "homepage": "https://www.metalmental.net/",
   "keywords": [
     "typescript",
     "logger",
